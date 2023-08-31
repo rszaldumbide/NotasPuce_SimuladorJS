@@ -1,0 +1,186 @@
+body{
+  background-color: rgb(216, 216, 216);
+}
+header{
+    background-color: rgb(22, 66, 132);
+    display: flex;
+}
+footer{
+  background-color: rgb(216, 216, 216);
+}
+#logo{
+    width: 50%;
+}
+#espacio{
+    width: 25%;
+}
+#informacion{
+    width: 50%;
+}
+section{
+  background-color: rgb(216, 216, 216);
+}
+#espacioSec{
+    height: 100%;
+}
+footer p{
+    color: white;
+}
+#final{
+    display: flex;
+    justify-content: space-between;
+}
+#textofinal{
+    color: white;
+}
+#textofinal a{
+    text-decoration: none;
+    color: white;
+}
+  
+/*SEGUNDA PAGINA*/
+#barranav{
+    border-bottom-color: rgb(22, 66, 132);
+    border-style: solid;
+    background-color: rgb(216, 216, 216);
+    text-align: right;
+    padding-right: 10%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#barranav a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+}
+.todo{
+  background-color: rgb(216, 216, 216);
+
+}
+.todo h2{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    
+}
+
+table {
+    background: white;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table th{
+  background-color: rgb(22, 66, 132);
+  height: 45px;
+  color: #fff;
+  font-size: medium;
+  border: 0.5px solid rgb(22, 66, 132);
+}
+
+table td{
+  color: rgb(100, 100, 100);
+  height: auto;
+  border: 0.5px solid  rgb(172, 171, 171);
+}
+
+th:hover {
+  background-color: rgba(20, 20, 20, 90);
+}
+td:hover{
+  background-color: rgba(20, 20, 20, 90);
+}
+
+.txt{
+    border: none;
+    width: 100px;
+    font-size: medium;
+    text-align: center;
+}
+.txt:hover{
+  background-color: rgba(20, 20, 20, 90);
+  color: #fff;
+}
+
+.txt2{
+  border: none;
+  width: 100px;
+  font-size: small;
+  text-align: center;
+  font-weight: 700;
+  color: red;
+
+}
+.custom-btn {
+  width: auto;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgb(13, 43, 88),
+  4px 4px 5px 0px rgb(12, 41, 83);
+  outline: none;
+  font-size: medium;
+}
+.btn-10 {
+  background: rgb(22, 66, 132);
+background: linear-gradient(0deg, rgb(22, 66, 132) 0%, rgb(22, 66, 132) 100%);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+  
+}
+.btn-10:hover {
+  color: black;
+  border: none;
+  background: white;
+}
+.btn-10:hover:after {
+  background: rgb(22, 66, 132);
+background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgb(22, 66, 132)100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  
+}
+.form-menu {
+  width: 750px;
+  background: white;
+  /*el padding es para que no se pegue a la caja*/
+  padding: 50px;
+  /*margin centra el cuadro*/
+  margin: auto;
+  border-radius: 4px;
+  color: white;
+}
+
+  .form-menu h4 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      text-align: center;
+      color: black;
+  }

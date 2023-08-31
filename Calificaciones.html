@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="RZaldumbide">
+        <meta name="description"
+          content="Simulador de notas Puce, con JavaScript.">
+        <meta name="keywords" content="proyectos, deberes, JavaScript">
+
+    <title>Sistema de Notas</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/Logo-R.png">
+    <link rel="stylesheet" href="css/estilo3.css">
+
+    <link rel='stylesheet' id='wpr_icons-css'  href='https://www.pucesi.edu.ec/webs2/wp-content/plugins/wp-responsive-menu/inc/assets/icons/wpr-icons.css?ver=3.1.7.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css'  href='https://www.pucesi.edu.ec/webs2/wp-includes/css/dashicons.min.css?ver=5.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='pm-font-awesome-css'  href='https://use.fontawesome.com/releases/v5.7.2/css/all.css?ver=5.4.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='lighboxCSS-css'  href='https://www.pucesi.edu.ec/webs2/wp-content/themes/temapucesi/css/lightbox.min.css?ver=2.11.2' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css'  href='https://www.pucesi.edu.ec/webs2/wp-content/themes/temapucesi/style.css?ver=1.0.0' type='text/css' media='all' />
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="js/js.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="https://www.pucesi.edu.ec/webs2/">
+                <img src="imagenes/logo_pucesi.png" alt="logo pucesi">
+            </a>
+        </div>
+        <div id="espacio">
+            
+        </div>
+        <div class="redes-sociales">
+            <nav class="sociales"><ul id="menu-redes-sociales" class="menu"><li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="http://facebook.com/puce.sede.ibarra"><span class="sr-text">Facebook</span></a></li>
+                <li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-30"><a href="https://youtube.com/pucesi"><span class="sr-text">Youtube</span></a></li>
+                <li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"><a href="https://www.instagram.com/pucesedeibarra/"><span class="sr-text">Instagram</span></a></li>
+                <li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"><a href="https://twitter.com/pucesedeibarra"><span class="sr-text">Twitter</span></a></li>
+                <li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a href="https://flickr.com/photos/pucesi/"><span class="sr-text">Flickr</span></a></li>
+                <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"><a href="https://apps.pucesi.edu.ec/mail"><span class="sr-text">Correo</span></a></li>
+                <li id="menu-item-13693" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13693"><a href="https://www.tiktok.com/@puce_ibarra?lang=es"><span class="sr-text">TikTok</span></a></li>
+                <li id="menu-item-13694" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13694"><a href="https://www.linkedin.com/company/pucesi"><span class="sr-text">LinkedIn</span></a></li>
+                </ul></nav> 
+        </div>
+    </header>
+    <nav id="barranav">
+        <a href="/index.html">Inicio</a>
+    </nav>
+    <section>
+        <div class="container-fluid text-center todo p-5" style="height: 800px;">
+            <h2>SISTEMA DE NOTAS PUCE-SI</h2>
+            <br>
+            <table id="tblDatos" >
+                <thead>
+                    <tr>
+                        <th>Estudiante</th>
+                        <th>Parcial 1</th>
+                        <th>Parcial 2</th>
+                        <th>Parcial 3</th>
+                        <th>Examen</th>
+                        <th>Total promedio</th>
+                        <th>Observación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="txt" type="text" id="txtnombre"></td>
+                        <td><input class="txt" type="number" id="txtnota1"></td>
+                        <td><input class="txt" type="number" id="txtnota2"></td>
+                        <td><input class="txt" type="number" id="txtnota3"></td>
+                        <td><input class="txt" type="number" id="txtExamen"></td>
+                        <td><label class="txt" id="lblPromedio" onmousemove="actualizar()">...</label></td>
+                        <td><label class="txt2" id="lblObservacion" onmousemove="actualizar()">...</label></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br>
+
+            <input type="submit" class="custom-btn btn-10" value="Agregar Estudiante" onclick="agregarEstudiante()">
+        </div>
+    </section>
+</body>
+</html>
